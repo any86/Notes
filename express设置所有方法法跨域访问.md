@@ -1,12 +1,10 @@
 # express设置所有方法法跨域访问
 
-
 ### 先上个小例子,大家运行体验下效果
 ```Javascript
 var fs = require('fs')
 var express = require('express')
 var app = express()
-
 
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -15,7 +13,6 @@ app.all('*', function(req, res, next) {
 });
 
 var method = 'put'
-
 app[method]('/mock/success', function(req, res) {
     var data = {
         "status": 1,
