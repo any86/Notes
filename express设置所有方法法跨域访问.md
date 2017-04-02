@@ -1,6 +1,6 @@
 # express设置所有方法法跨域访问
 
-## 先上个小例子,大家运行体验下效果
+### 先上个小例子,大家运行体验下效果
 ```Javascript
 var fs = require('fs')
 var express = require('express')
@@ -30,7 +30,7 @@ app.listen(9000, function(err) {
 })
 ```
 
-## 核心代码在这里
+### 核心代码在这里
 ```javascript
 app.all('*', function(req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -38,7 +38,7 @@ app.all('*', function(req, res, next) {
     next();
 });
 ```
-## 顺便捎带一个世界上最好的语言的版本
+### 顺便捎带一个世界上最好的语言的版本
 ```php
 <?php
 header("Access-Control-Allow-Origin: *");
