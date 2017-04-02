@@ -38,3 +38,11 @@ app.all('*', function(req, res, next) {
     next();
 });
 ```
+## 顺便捎带一个世界上最好的语言的版本
+```php
+<?php
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: PUT,POST,GET,DELETE,OPTIONS");
+print_r($_REQUEST);
+?>
+```
