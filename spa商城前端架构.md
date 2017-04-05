@@ -3,24 +3,35 @@
 ### 目录结构
 ```
 [cdn]
-docs/
+docs/ -- 文档
 static/
 store/
 src/
     assets/
     componets/
         layout/
+            header/
             shoppingCart/
+            footer/
+            list/
         common/
             checkbox.vue
             dropdown.vue
             ...      
     views/
         index/
+        list/
         detail/
         ...
     mock/
     router/
+        module/
+            shoppingCart/
+                index.js
+                ...
+        action.js
+        index.js
+        ...
     scss/
     store/
 test/
