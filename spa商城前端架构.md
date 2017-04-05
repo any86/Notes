@@ -5,9 +5,7 @@
 ```
 [cdn]
 docs/ -- 文档
-
 static/ -- 一些不支持npm的sdk
-
 src/
     assets/ -- 静态资源, 比如icon/font
     componets/ -- 抽象出的公共组件
