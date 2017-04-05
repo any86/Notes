@@ -5,15 +5,9 @@
 ```
 [cdn]
 docs/ -- 文档
+
 static/ -- 一些不支持npm的sdk
-store/ -- vuex
-    module/
-        shoppingCart/
-            index.js
-            ...
-    action.js -- 所有的异步请求都封装在这个文件
-    index.js
-    ...
+
 src/
     assets/ -- 静态资源, 比如icon/font
     componets/ -- 抽象出的公共组件
@@ -54,13 +48,20 @@ src/
     scss/ -- 全局样式和sass变量
         theme.scss
         reset.scss
+    store/ -- vuex
+        module/
+            shoppingCart/
+                index.js
+                ...
+        action.js -- 所有的异步请求都封装在这个文件
+        index.js
+        ...
+    ...
 test/ -- 单元测试(看最终工期安排, 时间充足就进行)
     spc/
 ...
 ```
 
-
-```
 ### 开发阶段后端接口支持跨域
 ```php
 <?php
