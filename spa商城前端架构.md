@@ -1,9 +1,8 @@
 # spa商城前端架构
 
 ### 目录结构
-
 ```
-[cdn]
+[cdn] 部分资源采用cdn加载, 比如font awesome
 docs/ -- 文档
 static/ -- 一些不支持npm的sdk
 src/
