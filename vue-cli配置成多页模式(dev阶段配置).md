@@ -33,7 +33,7 @@ module.exports = {
 ```
 
 ### 第四部, 修改webpack.dev.config.js中的HtmlWebpackPlugin配置
-有多少个页面就想plugins中添加多少个new HtmlWebpackPlugin(), 注意chunks的配置, 里面是你要引入的入口文件(entry, 第三步你自己配置的哦)的名字, 这样最终生成的页面中就会自动引入对应的entry文件js
+有多少个页面就向plugins中添加多少个new HtmlWebpackPlugin(), 注意**chunks**的配置, 里面是你要引入的入口文件(entry, 第三步你自己配置的哦)的名字, 这样最终生成的页面中就会自动引入对应的entry文件js
 ```javascript
 ...
 plugins: [
