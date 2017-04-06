@@ -1,7 +1,7 @@
 # vue-cli配置成多页模式(dev阶段配置)
 本文内容只设计`npm run dev`相应webpack代码的修改, `npm run build`会在后续文章中追加.
 
-来, 没病和我走5步
+**来, 没病和我走5步**
 
 ### 第一步, 建立html模板
 默认vue-cli是制作单页应用吗, html模板当然就只有一个index.html, 现在我们有几个页面就建立几个html, 比如: detail.html
