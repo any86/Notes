@@ -12,7 +12,7 @@ src/
     ...
 ```
 
-### 第二部, 建立入口js文件
+### 第二步, 建立入口js文件
 删除main.js, 建立index.js/detail.js
 ```
 src/
@@ -21,7 +21,7 @@ src/
     ...
 ```
 
-### 第三部, 修改webpack.base.config.js中的entry配置
+### 第三步, 修改webpack.base.config.js中的entry配置
 ```javascript
 ...
 module.exports = {
@@ -32,7 +32,7 @@ module.exports = {
   ...
 ```
 
-### 第四部, 修改webpack.dev.config.js中的HtmlWebpackPlugin配置
+### 第四步, 修改webpack.dev.config.js中的HtmlWebpackPlugin配置
 有多少个页面就向plugins中添加多少个new HtmlWebpackPlugin(), 注意**chunks**的配置, 里面是你要引入的入口文件(entry, 第三步你自己配置的哦)的名字, 这样最终生成的页面中就会自动引入对应的entry文件js
 ```javascript
 ...
