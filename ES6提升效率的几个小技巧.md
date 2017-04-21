@@ -1,6 +1,6 @@
 # ES6提升效率的几个小技巧.md
 
-以下代码均可在http://babeljs.io/repl/实时测试
+以下代码均可在这里实时测试 => http://babeljs.io/repl/   
 
 ### 展开数组/赋值
 ```javascript
