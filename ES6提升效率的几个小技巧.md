@@ -46,3 +46,5 @@ function add({x, y}){
 }
 add(obj); // 1 + 2 = 3;
 ```
+
+更多ES6的内容请看阮一峰大神的文档 => http://es6.ruanyifeng.com/#README
