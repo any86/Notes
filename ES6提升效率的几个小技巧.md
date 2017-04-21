@@ -27,7 +27,7 @@ console.log(object) // {a:1 , b: 2, c: 3, d: 4}
 var {a, d} = {a:1 , b: 2, c: 3, d: 4};
 console.log(a, d) // 1, 4
 ```
-想想ajax返回数据的时候用这个***赋值**是不是很惬意...
+想想ajax返回数据的时候用这个**赋值**是不是很惬意...
 
 ### 合并对象
 ```javascript
