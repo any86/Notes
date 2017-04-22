@@ -57,6 +57,7 @@ var fn = (a, b) => a + b // 等于 var fn = function(){return a + b;}
 var fn = () => {
 	console.log(this); // undefined
 }
+
 ```
 以上代码均可在这里实时测试 => http://babeljs.io/repl/   
 
