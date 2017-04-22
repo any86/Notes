@@ -45,4 +45,12 @@ function add({x, y}){
 add(obj); // 1 + 2 = 3;
 ```
 
+### 更简单的定义函数
+```javascript
+var fn = () => {} // 等于 var  fn = function(){}
+
+var fn = (a, b) => a + b // 等于 var fn = function(){return a + b;}
+
+```
+
 更多ES6的内容请看阮一峰大神的文档 => http://es6.ruanyifeng.com/#README
