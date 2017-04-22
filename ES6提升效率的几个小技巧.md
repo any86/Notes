@@ -52,5 +52,11 @@ var fn = () => {} // 等于 var  fn = function(){}
 var fn = (a, b) => a + b // 等于 var fn = function(){return a + b;}
 
 ```
+**注意:** 如果用了"=>"来表示函数, 那么函数内部的this为undefined, 这样我们就不用想以前那样写什么"_this"了.
+```javascript
+var fn = () => {
+	console.log(this); // undefined
+}
+```
 
 更多ES6的内容请看阮一峰大神的文档 => http://es6.ruanyifeng.com/#README
