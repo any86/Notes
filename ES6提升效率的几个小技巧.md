@@ -58,5 +58,7 @@ var fn = () => {
 	console.log(this); // undefined
 }
 ```
+以上代码均可在这里实时测试 => http://babeljs.io/repl/   
+
 
 更多ES6的内容请看阮一峰大神的文档 => http://es6.ruanyifeng.com/#README
