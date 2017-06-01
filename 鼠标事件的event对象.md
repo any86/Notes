@@ -17,7 +17,7 @@ document.body.scrollLeft和 document.body.scrollTop)
 
 5. offsetX,offsetY/layerX,layerY：事件发生的时候，鼠标相对于源元素左上角的位置；
 
-6. x,y/pageX,pageY：检索相对于父要素鼠标水平坐标的整数；
+6. x,y/pageX,pageY：检索相对于父元素鼠标水平坐标的整数；
 
 7. altKey,ctrlKey,shiftKey等：返回一个布尔值；
 
