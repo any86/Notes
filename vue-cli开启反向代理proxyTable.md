@@ -10,7 +10,7 @@ module.exports = {
     dev: {
        	...
         proxyTable: {
-	        '/': {
+	        '/get': {
 	                 target: 'http://api.com:6688',
 	                 changeOrigin: true
 	            }
