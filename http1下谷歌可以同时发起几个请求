@@ -1,5 +1,5 @@
 针对每个源(域名)同时可以发起6个
 
-#参考
+# 参考
 https://developers.google.com/web/tools/chrome-devtools/network-performance/understanding-resource-timing
 ![image](https://user-images.githubusercontent.com/8264787/30724868-6f6a5308-9f06-11e7-96eb-a7d8e9e20570.png)
