@@ -15,7 +15,7 @@
 ## 怎么用?
 
 ### 进入action页面
-现在任何仓库都多了一个**"action"**按钮, 如图:
+现在任何仓库都多了一个**action**按钮, 如图:
 ![](https://ws1.sinaimg.cn/large/005IQkzXly1g5yya6q3i4j30tz04h3ze.jpg)
 
 ### 选择需要的环境
