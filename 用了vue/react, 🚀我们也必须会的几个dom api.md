@@ -15,7 +15,7 @@
 ## getScrollHeight/getOffsetHeight/getClientHeight
 
 
-
+## getClientBounceRect
 
 在js中如果你想用🚀原生api实现jq的`append`和`prepend`以及`after`和`before`, 原来你可能会说用`appendChild`和`insertBefore`, 但是19年的今天"兼容ie"这种要求已经很少见, 我们还有必要用这么蹩脚的api去实现吗?
 
