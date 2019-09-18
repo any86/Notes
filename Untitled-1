@@ -1,0 +1,21 @@
+## getComputedStyle(element)
+**实时**获取元素的样式信息, 返回值是一个CSSStyleDeclaration对象
+
+### 简单举例
+```javascript
+const style = window.getComputedStyle(document.body);
+// 获取背景色和文字颜色
+const {background, color} = style;
+```
+
+### 常用在哪里?
+在ant ui中通过`getComputedStyle`实时获取textarea的高度(跟随输入的文字, 高度会变化)
+
+
+![](https://ws1.sinaimg.cn/large/005IQkzXly1g72harp62hj30qj04waao.jpg)
+
+
+https://github.com/ant-design/ant-design/blob/master/components/input/calculateNodeHeight.tsx#L57
+
+
+<!-- ## getScrollHeight/getOffsetHeight/getClientHeight -->
