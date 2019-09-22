@@ -10,7 +10,7 @@
 ## copy-to-clipboard(ant)
 
 
-## vue-popover -> popover(element-ui)
+## vue-popover -> popover(element-ui|iview)
 https://github.com/ElemeFE/element/blob/dev/packages/popover/src/main.vue#L25
 
 
