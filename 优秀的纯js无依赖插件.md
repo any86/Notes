@@ -1,16 +1,3 @@
-
-## react-slick(轮播)
-ant design 的轮播就是基于他
-
-**网址**: https://github.com/akiran/react-slick
-
-
-**网址**: https://github.com/kenwheeler/slick/
-
-```javascript
-
-```
-
 ## copy-to-clipboard(ant)
 https://github.com/zenorocha/clipboard.js
 
@@ -50,8 +37,6 @@ IE6~10, Chrome, Firefox, Safari, Opera, Mobile Safari, Android, Windows Mobile.
 
 ## https://github.com/alexgibson/shake.js
 
-
-## https://github.com/inorganik/countUp.js
 
 
 ## 进度条
