@@ -1,21 +1,58 @@
-## getComputedStyle(element)
-**实时**获取元素的样式信息, 返回值是一个CSSStyleDeclaration对象
 
-### 简单举例
+## react-slick(轮播)
+ant design 的轮播就是基于他
+
+**网址**: https://github.com/akiran/react-slick
+
+
+**网址**: https://github.com/kenwheeler/slick/
+
 ```javascript
-const style = window.getComputedStyle(document.body);
-// 获取背景色和文字颜色
-const {background, color} = style;
+
 ```
 
-### 常用在哪里?
-在ant ui中通过`getComputedStyle`实时获取textarea的高度(跟随输入的文字, 高度会变化)
+## copy-to-clipboard(ant)
+https://github.com/zenorocha/clipboard.js
 
 
-![](https://ws1.sinaimg.cn/large/005IQkzXly1g72harp62hj30qj04waao.jpg)
+## classname
+
+## jssavor
+
+## excel-js
+
+## fileApi
+
+## swipe
+
+## autosize
+19年之前很多插件都是用的autosize去计算textare的实时高度, 来做到textarea随着文字换行而发生高度变化
+https://github.com/jackmoore/autosize
+
+## qrcodejs(二维码生成器)
+
+#### 网址
+https://github.com/davidshimjs/qrcodejs
+
+``` javascript
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+	text: "http://juejin.im",
+	width: 128,
+	height: 128,
+	colorDark : "#000000",
+	colorLight : "#ffffff",
+	correctLevel : QRCode.CorrectLevel.H
+});
+```
+#### 兼容性
+IE6~10, Chrome, Firefox, Safari, Opera, Mobile Safari, Android, Windows Mobile.
 
 
-https://github.com/ant-design/ant-design/blob/master/components/input/calculateNodeHeight.tsx#L57
+## https://github.com/alexgibson/shake.js
 
 
-<!-- ## getScrollHeight/getOffsetHeight/getClientHeight -->
+## https://github.com/inorganik/countUp.js
+
+
+## 进度条
+https://github.com/kimmobrunfeldt/progressbar.js
