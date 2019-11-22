@@ -1,27 +1,33 @@
-# typescript🔥实战 - 实现浏览器全屏
+## 学习一门新的语言, 🚀最快速的方法还是看实战代码!
 
-## "学习ts有什么实际项目可以参考吗?"
 初学ts的时候, 大家都会问"**有什么实际项目可以参考吗?**".
 
-好了! 满足大家的需求, 我计划定期用ts做一些业务常用小插件, **代码量尽量小**(控制在1kb以内), 方便大家阅读源码, 也方便大家**有时间**去实现一遍.
+好了! 满足大家的需求, 我计划**定期**用ts做一些业务常用小插件, **代码量尽量小**(控制在1kb以内), 方便大家阅读源码, 也方便大家**有时间**去实现一遍.
 
 
 ## 浏览器全屏
-![1.png](http://ww1.sinaimg.cn/large/005IQkzXly1g932fuepfij30c201pjrb.jpg)
+![1.png](https://user-gold-cdn.xitu.io/2019/11/19/16e812aa1e280c7d?w=434&h=61&f=jpeg&s=15340)
 
 最近后台项目需要一个"**全屏**"的按钮, github了下, 发现都仅仅支持"**开启全屏**", 而没有"**切换**"/"**监听全屏状态**"等功能, 所以打算自己写一个(主要代码量不大, 嘿嘿).
+
+## 写代码之前说说逻辑
+所有现代浏览器(**>IE11**)都提供了"全屏"的api,只是不同浏览器有不同的api(基本就是前缀不同), 所以我们要做的就是判断浏览器, 然后执行正确的api.
+
+1. 判断当前浏览器支持的前缀, 比如"webkit".
+2. 根据前缀得出我们需要的4个api的名字.
+3. 通过api实现"全屏"/"退出"/"切换"/"监听".
 
 ## 代码
 
 源码: https://github.com/any86/be-full
 
+<img src="https://img.shields.io/github/stars/any86/be-full?style=social"/>
+
 首先我发现ts自带的声明中, 对`webkit`或`moz`开头的这种api并没有声明类型, **所以我们需要自己补充一下**.
+不然ts会提示找不到对应的方法.
+![](https://user-gold-cdn.xitu.io/2019/11/19/16e8275b5f5ccc1d?w=855&h=53&f=png&s=15950)
 
 **🔥 知识点**: 在自己的`.d.ts`文件中可以对ts系统自带的`interface`进行**声明合并**. 
-
-**注意**: 下面代码的`webkitRequestFullscreen(options?: FullscreenOptions): Promise<void>;`这类的描述其实我只是写了**webkitRequestFullscreen**部分,
-
-`(options?: FullscreenOptions): Promise<void>`这些是ts系统已经描述好的, 可以在**node_modules/typescript/lib/lib.dom.d.ts**中找到. 所以大家不要慌.
 
 ```typescript
 // global.d.ts
@@ -50,13 +56,10 @@ interface Document {
     mozCancelFullScreen(): Promise<void>;
 }
 ```
+**提示**: `requestFullscreen(options?: FullscreenOptions): Promise<void>;`可以在**node_modules/typescript/lib/lib.dom.d.ts**中找到.
 
-**接下来说说代码逻辑**:
-1. 判断当前浏览器支持的前缀, 比如"webkit".
-2. 根据前缀得出我们需要的4个api的名字.
-3. 通过api实现"全屏"/"退出"/"切换"/"监听".
-
-功能其实很简单, 就不过分解读了, 好了看看**实现代码**:
+#### 🔥 功能实现
+功能其实很简单, 我都写了注释, 就不过分解读了,  好了看**实现代码**:
 ```typescript
 type RFSMethodName = 'webkitRequestFullScreen' | 'requestFullscreen' | 'msRequestFullscreen' | 'mozRequestFullScreen';
 type EFSMethodName = 'webkitExitFullscreen' | 'msExitFullscreen' | 'mozCancelFullScreen' | 'exitFullscreen';
@@ -186,14 +189,19 @@ export function watchFull(el: HTMLElement, callback: (isFull: boolean) => void) 
 
 https://github.com/any86/any-touch
 
+<img src="https://img.shields.io/github/stars/any86/any-touch?style=social"/> 
 
 **🍭 把vue组件变成this.$xxx这样的命令**
 
 https://github.com/any86/vue-create-root
 
-**🍔 任意元素全屏显示, 不到1kb**
+<img src="https://img.shields.io/github/stars/any86/vue-create-root?style=social"/>
+
+**🍔 任意元素全屏显示, 支持PC/移动端, 不到1kb**
 
 https://github.com/any86/be-full
+
+<img src="https://img.shields.io/github/stars/any86/be-full?style=social"/>
 
 ## 微信群
 感谢大家的阅读, 如有疑问可以加我微信, 我拉你进入**微信群**(由于腾讯对微信群的100人限制, 超过100人后必须由群成员拉入)
