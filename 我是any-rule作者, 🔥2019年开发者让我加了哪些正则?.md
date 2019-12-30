@@ -1,4 +1,12 @@
-# 我是any-rule作者, 🔥2019年开发者让我新加了这些正则!
+# 我是any-rule作者, 🔥2019年"开发者"让我新加了这些正则!
+
+## 如若初次
+[any-rule](https://github.com/any86/any-rule)是一个vscode插件, 开发者可以方便的查询常用正则.
+
+![any-rule](https://ws1.sinaimg.cn/large/630deecfly1gaei235lz3g20bo06rgwk.gif)
+
+
+## 快速成长
 
 ![1.png](https://ws1.sinaimg.cn/large/630deecfly1gaehq42crkj20ti0a0aao.jpg)
 
@@ -6,9 +14,9 @@
 
 <a target="new" href="https://github.com/any86/any-rule"><img src="https://img.shields.io/github/stars/any86/any-rule.svg?style=social"/></a>
 
-6月28日开的项目, 截至本文star已经增长到**1625**, 这要非常感谢平台曝光和各位优质开发者的认可😊, 请收下微臣的膝盖orz. 
+**6月28**日开的项目, 截至本文star已经增长到**1625**, 这要非常感谢🔥平台曝光和各位优质开发者的认可😊, 请收下微臣的膝盖orz. 
 
-经过半年的维护, 共计解决了**45**条[issue](https://github.com/any86/any-rule/issues), 🍔根据开发者反馈新增了**14**条正则. 下面我就列出这些新增的正则, 算是为19年的[any-rule](https://github.com/any86/any-rule)做一个总结.
+经过半年的维护,整理正则已经打到**61**条, 共计解决了**45**条[issue](https://github.com/any86/any-rule/issues), 🍔根据开发者反馈新增了**14**条正则. 下面我就列出这些新增的正则, 算是为19年的[any-rule](https://github.com/any86/any-rule)做一个总结.
 
 ## 🍔 根据开发者反馈, 新增加的正则
 
@@ -106,7 +114,7 @@
 [第六课, 什么是声明文件(declare)? 🦕 - 全局声明篇](https://juejin.im/post/5dcbc9e2e51d451bcb39f123)
 
 ## 🧨 最后
-还是要感谢平台, 希望新的一年平台越来越好.
+还是要感谢平台, 祝愿新的一年里平台越来越好🔥.
 
 ## 微信群
 ![WechatIMG32646.jpeg](https://ws1.sinaimg.cn/large/630deecfly1gaekd016mnj20u0186whu.jpg)
