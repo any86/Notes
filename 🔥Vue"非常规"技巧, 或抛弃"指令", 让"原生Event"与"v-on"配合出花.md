@@ -93,7 +93,6 @@ el.addEventListener('abc', event=>{
     'abc' === event.type // true
     1 === event.a // true
 });
-
 // 创建事件
 const event = new Event(type, {
      // 事件是否可以冒泡, 默认false
