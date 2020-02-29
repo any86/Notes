@@ -1,4 +1,4 @@
-# 🔥Vue"非常规"技巧, 或抛弃"指令", 让"原生Event"与"v-on"配合出花
+# 🔥Vue"非常规"技巧, 或抛弃"指令", 让"原生Event"与"v-on"相爱
 
 ## 一句话理解"Event"
 类似vue中`$emit`, 使用`new Event`可以创建浏览器的**原生事件**,通过使用`addEventListener`监听事件. 
@@ -173,7 +173,7 @@ function dispatchDOMEvent(el, payload, eventInit){
 ## 我的应用
 其实这种方式和vue配合也是偶然发现, 不是什么复杂的东西, 只是一般不会往这上面想.
 
-我做了一个手势库用这种方式实现在vue下和"v-on"配合:
+我做了一个[手势库](https://github.com/any86/any-touch)用这种方式实现在vue下和"v-on"配合:
 ```html
 <div 
     @tap="onTap" 
