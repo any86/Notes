@@ -22,7 +22,7 @@ el.dispatchEvent(event);
 ```html
 <div @scroll-reach-bottom="onScrollReachBottom"/>
 ```
-要实现上例就需要用到自定义事件(Event).
+要实现上例就需要用到**自定义事件(Event)**.
 
 ## 为什么不用"组件"?
 以"拖拽组件"为例, 众所周知组件至少有一个元素(根), 那么如果我们使用"拖拽组件":
