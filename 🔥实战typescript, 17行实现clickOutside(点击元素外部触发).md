@@ -1,5 +1,6 @@
-# 🔥实战typescript, 17行实现clickOutside(点击元素外部触发)
+# 🔥实战typescript, 17行代码用el.container做一个常用插件
 
+## 17行实现clickOutside(点击元素外部触发)
 **源码**: https://github.com/any86/6h/blob/master/packages/click-outside/src/index.ts
 ## 最终目标
 
