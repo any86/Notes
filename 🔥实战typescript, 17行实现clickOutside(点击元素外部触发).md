@@ -15,6 +15,7 @@ cancel();
 ## 原理
 1. 绑定目标元素的`touchend`和`click`事件.
 2. 在事件回调中判断"当前触发事件的元素"是否在"目标元素"内
+**代码详解请看代码注释.**
 
 ## 实现代码
 
@@ -28,6 +29,10 @@ export default function (el: Node, callback: (ev:Event) => void) {
         // 禁止移动端touchend触发后还触发click
         if (eventNames[0] === ev.type && isTouch) return;
         // 判断点击元素是否在el外
+        // 由于ev.target的类型是EventTarget,
+        // 而contains方法标注的参数类型是Node, 
+        // 实际上EventTarget也是dom元素,
+        // 所以此处使用需要类型断言, 标注为Node类型
         if (!el.contains(ev.target as Node)) callback(ev);
     }
 
