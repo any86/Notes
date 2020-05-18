@@ -1,5 +1,3 @@
-# 让老vue-cli开启🚀"新ES语法"支持, 比如"可选链"
-
 ## 本文能学到什么?
 1. 让老项目(基于vue-cli)支持ES新语法(处于试验阶段), 比如"可选链".
 2. 了解其他目前在实验阶段的ES新语法.
@@ -21,7 +19,7 @@ const obj = {
 
 const a = obj?.a; // undefined, 如果没有"?"可就报错喽
 // 等价于
-// const a = undefined === obj ? obj.a : undefined;
+// const a = (null === obj || undefined === obj) ? undefined : obj.a;
 const baz = obj?.foo?.bar?.baz; // 42
 const baz = obj?.['foo']?.bar?.baz // 42
 ```
@@ -29,7 +27,7 @@ const baz = obj?.['foo']?.bar?.baz // 42
 1. 近期发布的vue-cli3已经默认支持"可选链", 大家可以先试下是否支持再安装.
 2. 使用ts的小伙伴, 如果使用的是3.7以后的版本, 那么默认也支持"可选链".
 
-## 安装"ES新特性"
+## 安装"ES新特性", 需要vue-cli3
 
 ### 第一步
 ```
@@ -41,7 +39,9 @@ yarn add -D @babel/plugin-proposal-optional-chaining
 ```javascript
 module.exports = {
     presets: [
-        '@vue/cli-plugin-babel/preset',
+        '@vue/cli-plugin-babel/preset'
+    ],
+    plugins:[
         // 可选链插件, 其他babel插件也是一样的安装方式
         "@babel/plugin-proposal-optional-chaining"
     ]
