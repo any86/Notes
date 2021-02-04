@@ -33,9 +33,10 @@ app.listen(9000, function(err) {
 ### 核心代码在这里
 ```javascript
 app.all('*', function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
-    next();
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Methods", "PUT,POST,GET,DELETE,OPTIONS");
+  res.header('Access-Control-Allow-Headers', 'token,Content-Type');
+  next();
 });
 ```
 ### 顺便捎带一个世界上最好的语言的版本
