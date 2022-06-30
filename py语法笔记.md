@@ -1,4 +1,4 @@
-初学py, 记录下他特殊的语法
+初学py, 记录下他特殊的语法, [内置函数参考](https://www.runoob.com/python3/python3-built-in-functions.html)
 ## 列表生成式
 ```python
 c = [i*2 for i in [3,21,67]]
